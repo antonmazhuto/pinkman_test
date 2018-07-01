@@ -81,3 +81,11 @@ $('.button-submit').on("click", function (e) {
     console.log('Телефон: ' + $('.phone').val());
     console.log('E-mail: ' + $('.email').val());
 });
+
+$(window).load(function() {
+    var images = $('img');
+    images.each(function(i) {
+        $(this).width($(this).width() / 2);
+    });
+});
+
